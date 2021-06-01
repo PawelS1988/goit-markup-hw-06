@@ -809,6 +809,73 @@ transition: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe {
+width: 570px;
+height: 86px;
+margin-left: 77px;
+margin-top: -23px;
+}
+
+.subscribe-title {
+padding-bottom: 20px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.subscribe-input {
+min-width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background: transparent;
+padding-left: 16px;
+}
+
+.subscribe-form {
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.subscribe-button {
+position: relative;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 42px;
+padding-right: 76px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.06em;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+color: #FFFFFF;
+}
+
+.subscribe-button::after {
+position: absolute;
+content: "";
+width: 24px;
+height: 24px;
+margin-left: 24px;
+background-image: url(../images/send.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
 /* ------- Section Footer End ------- */
 
 /* ------- Section Backdrop ------- */
@@ -820,6 +887,7 @@ top: 0;
 width: 100%;
 height: 100%;
 background-color: rgb(0, 0, 0, 0.1);
+transition: opacity 250ms;
 }
 
 .modal {
@@ -831,6 +899,7 @@ width: 528px;
 min-height: 581px;
 background-color: #FFFFFF;
 padding: 40px;
+transition: all 250ms ease-in-out;
 }
 
 .close-btn {
@@ -942,23 +1011,6 @@ pointer-events: none;
     fill: #000;
 }
 
-.iconperson{
-    background-image: url(../images/formsprite.svg#icon-formperson);
-
-}
-
-.iconphone{
-    background-image: url(../images/formsprite.svg#icon-formphone);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.iconenvelope{
-    background-image: url(../images/formsprite.svg#icon-formenvelope);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .modal-input-wrapper {
     position: relative;
     width: 100%;
@@ -980,6 +1032,11 @@ pointer-events: none;
     border-color: #2196F3;
 }
 
+.policy-label {
+    display: flex;
+    align-items: center;
+}
+
 .policy-label::before {
     display: inline-block;
     content: "";
@@ -987,6 +1044,7 @@ pointer-events: none;
     height: 16px;
     border: 2px solid #000;
     border-radius: 2px;
+    margin-right: 8px;
 }
 
 .modal-checkbox:checked + .policy-label::before {
@@ -995,6 +1053,17 @@ pointer-events: none;
     background-image: url(../images/check.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
 }
 
 /* ------- Section Backdrop End ------- */

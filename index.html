@@ -385,6 +385,13 @@
                 </svg></a>
             </li>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-title">Zapisz się do newslettera</p>
+            <form action="" class="subscribe-form">
+              <input type="semail" name="semail" class="subscribe-input" placeholder="E-mail">
+              <button type="button" class="subscribe-button">Zapisz się</button>
+            </form>
+        </div>
       </address>
     </div>
   </footer>
@@ -397,23 +404,23 @@
         <label for="name" class="modal-label" required>Imię</label>
         <div class="modal-input-wrapper">
           <input type="text" name="name" class="modal-input">
-          <div class="modal-form-icon iconperson"></div>
+          <svg class="modal-form-icon"><use href="./images/formsprite.svg#icon-formperson"></use></svg>
         </div>
         <label for="telephone" class="modal-label" required>Telefon</label>
         <div class="modal-input-wrapper">
           <input type="tel" name="telephone" class="modal-input">
-          <div class="modal-form-icon iconphone"></div>
+          <svg class="modal-form-icon"><use href="./images/formsprite.svg#icon-formphone"></use></svg>
         </div>
         <label for="email" class="modal-label" required>Email</label>
         <div class="modal-input-wrapper">
-          <input type="emial" name="email" class="modal-input">
-          <div class="modal-form-icon iconenvelope"></div>
+          <input type="email" name="email" class="modal-input">
+          <svg class="modal-form-icon"><use href="./images/formsprite.svg#icon-formenvelope"></use></svg>
         </div>
         <label for="comment" class="modal-label">Komentarz</label>
         <textarea name="comment" id="textarea" cols="30" rows="10" class="modal-textarea" placeholder="Wprowadź tekst"></textarea>
         <div class="modal-checkbox-wrapper">
           <div class="modal-disclaimer-wrapper">
-            <input type="checkbox" class="modal-checkbox" required>
+            <input type="checkbox" id="checkbox" class="modal-checkbox visually-hidden" required>
             <label for="checkbox" class="policy-label">Oświadczam iż akceptuję <a href="#"
                 class="modal-policy-link">Regulamin</a> i <a href="#" class="modal-policy-link">Politykę
                 prywatności</a>.</label>
