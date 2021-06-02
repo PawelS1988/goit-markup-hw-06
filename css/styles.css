@@ -1032,11 +1032,6 @@ pointer-events: none;
     border-color: #2196F3;
 }
 
-/* .policy-label {
-    display: flex;
-    align-items: center;
-} */
-
 .policy-label::before {
     display: inline-block;
     content: "";
